@@ -2,12 +2,14 @@
 
 int main(void)
 {
-	int i, Ans, max;
-	Ans = 0;
+	int i, add, cls, max;
+	add = 0;
+	cls = 1;
 	scanf("%d", &max);
-	for (i = 0; i <= max; i++)
+	for (i = 1; i <= max; i++)
 	{
-		Ans += i;
+		add += i;
+		cls *= i;
 	}
-	printf("1から%dまで加算すると%dになったよ！", max, Ans);
+	printf("1から%dまで加算すると%dになったよ！\n 乗算すると%dになるよ！\n", max, add, cls);
 }
